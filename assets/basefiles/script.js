@@ -9,7 +9,7 @@ function openModal(productId) {
   }
   
   // Discord Webhook Functionality
-  const webhookUrl = 'https://discord.com/api/webhooks/1305555576717312050/7apSJYNKnRdFX9J4_6SxAvvsPBqJgFmvF3mR5hl0mW2c1xeVZMP5euFSXA0okHMJOUBe'; // Replace with your actual webhook URL
+  const webhookUrl = 'https://discord.com/api/webhooks/1305684032469729310/k6LEUfW6ybFI-LaWCO-DqtVTtHXpfD7owExbqUlmkOA_rMYnvCsRgJJJhYMewRB2crVK'; // Replace with your actual webhook URL
   
   // Function to send the message to Discord webhook
   function sendToDiscord() {
