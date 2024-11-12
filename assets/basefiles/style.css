@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #8acff3
+    background-color: #8acff3;
 }
 
 /* Header styles */
@@ -73,6 +73,7 @@ nav a:hover {
 
 .product-box img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -99,6 +100,16 @@ nav a:hover {
 .product-box.full-width {
     grid-column: span 3; /* Span all 3 columns */
     text-align: center;
+}
+
+/* Make the textarea responsive */
+textarea {
+    width: 100%; /* Make the textarea take up the full width of its container */
+    max-width: 600px; /* Optional: limit the max width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing */
 }
 
 /* Modal styling */
@@ -144,15 +155,44 @@ footer {
     padding: 1rem; /* Optional: Add some padding for spacing */
 }
 
-/* Responsive grid */
+/* Responsive grid layout for smaller screens */
 @media (max-width: 768px) {
     .product-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; /* Two columns layout for medium screens */
+    }
+
+    /* Make product boxes responsive */
+    .product-box {
+        padding: 15px;
+    }
+
+    /* Adjust textarea width on smaller screens */
+    .product-box.full-width textarea {
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    /* Adjust product box padding and font sizes for small screens */
+    .product-box {
+        padding: 10px;
+    }
+
+    .product-box h3 {
+        font-size: 1rem; /* Smaller text for headings */
+    }
+
+    /* Adjust button padding for smaller screens */
+    .info-btn {
+        padding: 8px 16px;
+    }
+
+    /* Adjust textarea width on small screens */
+    .product-box.full-width textarea {
+        width: 100%;
     }
 }
