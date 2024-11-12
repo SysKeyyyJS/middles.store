@@ -139,6 +139,9 @@ nav a:hover {
 footer {
     font-size: 0.9rem;
     background-color: #222;
+    color: white; /* Make text white */
+    text-align: center; /* Center the text */
+    padding: 1rem; /* Optional: Add some padding for spacing */
 }
 
 /* Responsive grid */
