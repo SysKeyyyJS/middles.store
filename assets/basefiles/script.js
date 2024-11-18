@@ -43,3 +43,8 @@ function openModal(productId) {
       alert('Message Sent.');
     });
   }  
+
+  document.getElementById("hamburger-icon").addEventListener("click", function() {
+    const menu = document.getElementById("dropdown-menu");
+    menu.classList.toggle("active");
+});

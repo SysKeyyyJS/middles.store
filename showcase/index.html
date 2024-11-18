@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall</title>
+    <link rel="stylesheet" href="assets/basefiles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Photo Wall</h1>
+    </header>
+
+    <main>
+        <div class="photo-wall">
+            <!-- Main photo images with data attribute to associate with modal images -->
+            <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1" onclick="openModal(this)" data-modal="product1">
+            <img src="https://via.placeholder.com/300x200?text=Product+2" alt="Product 2" onclick="openModal(this)" data-modal="product2">
+            <img src="https://via.placeholder.com/300x200?text=Product+3" alt="Product 3" onclick="openModal(this)" data-modal="product3">
+            <img src="https://via.placeholder.com/300x200?text=Product+4" alt="Product 4" onclick="openModal(this)" data-modal="product4">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Photo Wall. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="Modal Image">
+            <div id="modal-gallery" class="photo-wall">
+                <!-- Dynamic modal images will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/basefiles/script.js"></script>
+</body>
+</html>
