@@ -9,7 +9,7 @@ function openModal(productId) {
   }
   
   // Discord Webhook Functionality
-  const webhookUrl = 'https://discord.com/api/webhooks/1305684032469729310/k6LEUfW6ybFI-LaWCO-DqtVTtHXpfD7owExbqUlmkOA_rMYnvCsRgJJJhYMewRB2crVK'; // Replace with your actual webhook URL
+  const webhookUrl = 'https://discord.com/api/webhooks/1307869775632011416/OpUMW34KR4Jdc84rB0PnTlG_NfOzDuuXUW6xOIKtE0wm2wKM8dt-XQBGW3arf2SB38Ek'; // Yes we are 100% Fully aware this is not secure, but the channel is only viewed by the site owners. Go ahead and send some shit, we wanna see what you have to say. 
   
   // Function to send the message to Discord webhook
   function sendToDiscord() {
