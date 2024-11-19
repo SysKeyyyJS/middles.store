@@ -3,111 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Middles. LLC | Home</title>
-
-  <!-- Link to the CSS file -->
+  <title>Car Liveries Showcase</title>
   <link rel="stylesheet" href="assets/basefiles/style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Middles. LLC</h1>
-    <!-- Hamburger Icon -->
-    <div class="hamburger-menu" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+  <div class="gallery">
+    <div class="gallery-item" data-livery="livery1">
+      <img src="https://cdn.middles.store/showcase/com1/bullhorn1.png" alt="Livery 1">
     </div>
-    <!-- Navigation bar -->
-    <nav id="navMenu">
-      <a href="#">Graphics</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Liveries</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="album-gallery">
-      <!-- Image 1 -->
-      <div class="album-item">
-        <img src="https://via.placeholder.com/300" alt="Image 1" onclick="openImageModal(1)">
-      </div>
-
-      <!-- Image 2 -->
-      <div class="album-item">
-        <img src="https://via.placeholder.com/300" alt="Image 2" onclick="openImageModal(2)">
-      </div>
-
-      <!-- Image 3 -->
-      <div class="album-item">
-        <img src="https://via.placeholder.com/300" alt="Image 3" onclick="openImageModal(3)">
-      </div>
-
-      <!-- Image 4 -->
-      <div class="album-item">
-        <img src="https://via.placeholder.com/300" alt="Image 4" onclick="openImageModal(4)">
-      </div>
-    </section>
-  </main>
-
-  <!-- Modal for Image 1 -->
-  <div id="imageModal1" class="image-modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeImageModal(1)">&times;</span>
-      <h2>Image 1 Gallery</h2>
-      <div class="modal-images">
-        <img src="https://via.placeholder.com/600" alt="Image 1 large">
-        <img src="https://via.placeholder.com/600" alt="Image 1 larger">
-        <img src="https://via.placeholder.com/600" alt="Image 1 even larger">
-      </div>
+    <div class="gallery-item" data-livery="livery2">
+      <img src="livery2-thumbnail.jpg" alt="Livery 2">
     </div>
+    <div class="gallery-item" data-livery="livery3">
+      <img src="livery3-thumbnail.jpg" alt="Livery 3">
+    </div>
+    <!-- Add more gallery items here -->
   </div>
 
-  <!-- Modal for Image 2 -->
-  <div id="imageModal2" class="image-modal">
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close-btn" onclick="closeImageModal(2)">&times;</span>
-      <h2>Image 2 Gallery</h2>
-      <div class="modal-images">
-        <img src="https://via.placeholder.com/600" alt="Image 2 large">
-        <img src="https://via.placeholder.com/600" alt="Image 2 larger">
-        <img src="https://via.placeholder.com/600" alt="Image 2 even larger">
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for Image 3 -->
-  <div id="imageModal3" class="image-modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeImageModal(3)">&times;</span>
-      <h2>Image 3 Gallery</h2>
-      <div class="modal-images">
-        <img src="https://via.placeholder.com/600" alt="Image 3 large">
-        <img src="https://via.placeholder.com/600" alt="Image 3 larger">
-        <img src="https://via.placeholder.com/600" alt="Image 3 even larger">
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal for Image 4 -->
-  <div id="imageModal4" class="image-modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeImageModal(4)">&times;</span>
-      <h2>Image 4 Gallery</h2>
-      <div class="modal-images">
-        <img src="https://via.placeholder.com/600" alt="Image 4 large">
-        <img src="https://via.placeholder.com/600" alt="Image 4 larger">
-        <img src="https://via.placeholder.com/600" alt="Image 4 even larger">
+      <span id="close-modal" class="close">&times;</span>
+      <div id="modal-images" class="modal-images">
+        <!-- Images will be injected here dynamically -->
       </div>
     </div>
   </div>
 
   <script src="assets/basefiles/script.js"></script>
-
-  <footer>
-    <p>&copy; 2024 Middles. LLC | All Rights Reserved</p>
-    <p>Coded & Designed by SysKeyJS LLC.</p>
-  </footer>
 </body>
 </html>
