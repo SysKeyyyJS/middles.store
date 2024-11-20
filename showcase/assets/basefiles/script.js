@@ -4,12 +4,14 @@ const liveries = {
     "https://cdn.middles.store/showcase/com1/bullhorn2.png", "https://cdn.middles.store/showcase/com1/bullhorn3.png", "https://cdn.middles.store/showcase/com1/bullhorn4.png"
   ],
   livery2: [
-    "livery2-1.jpg", "livery2-2.jpg", "livery2-3.jpg"
+    "https://cdn.middles.store/showcase/com2/trailer2.png", "https://cdn.middles.store/showcase/com2/trailer3.png", "https://cdn.middles.store/showcase/com2/trailer4.png"
   ],
   livery3: [
-    "livery3-1.jpg", "livery3-2.jpg", "livery3-3.jpg"
+    "https://cdn.middles.store/showcase/com3/statetroopersuv2.png", "https://cdn.middles.store/showcase/com3/statetroopersuv3.png", "https://cdn.middles.store/showcase/com3/statetroopersuv4.png"
   ],
-  // Add more livery data as needed
+  livery4: [
+    "https://cdn.middles.store/showcase/com4/", "https://cdn.middles.store/showcase/com4/", "https://cdn.middles.store/showcase/com4"
+  ]
 };
 
 // Function to open the modal and display images
